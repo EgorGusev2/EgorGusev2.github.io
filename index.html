@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <title> Лабораторные </title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="image1.png  "> <br/>
+    <nav> 
+      <a>Ссылка меню 1</a>
+      <a>Ссылка 2</a>
+      <a>Ссылка 3</a>
+    </nav> <br/>
+    <div class="name"> Название сайта <br/> </div>
+  </header>
+
+<div class="links"> <h3> Ссылки </h3>
+
+<ul> 
+    <li>
+  <a href = "http://kubsu.ru" target = "_blank"> Официальный сайт КубГУ (HTTP) </a>
+</li> 
+
+ <li>
+  <a href = "https://kubsu.ru" target = "_blank"> Официальный сайт КубГУ </a>
+</li> 
+
+  <li>
+    <a href = "https://kubsu.ru" target = "_blank">
+      <img src="image.jpg" alt="Ссылка-изображение" id="a1" width="300" height="200">
+    </a>
+  </li>
+    
+    <li>
+      <a href="#formi">Сокращенная ссылка на внутреннюю страницу (к форме)</a>
+    </li> 
+    
+    <li>
+      <a href="#top">Сокращенная ссылка на главную страницу (в начало)</a>
+    </li> 
+    
+    <li>
+      <a href="#fragment">Ссылка на фрагмент текущей страницы</a>
+    </li> 
+    
+    <li>
+      <a href="https://www.kubsu.ru/ru/search?key=программирование" target="_blank">Ссылка с тремя параметрами в URL </a>
+    </li> 
+    
+    <li>
+      <a href="https://www.kubsu.ru/ru/education/programs?id=1" target="_blank">Ссылка с параметром id в URL</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru/ru/news" target="_blank"> Относительная ссылка на страницу в текущем каталоге</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru/ru/about" target="_blank">Относительная ссылка на страницу в каталоге about</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru/ru" target="_blank">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru" target="_blank">Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+    </li> 
+    
+    <li>
+      <p>Кубанский государственный университет 5 сентября отмечает 
+        <a href="https://www.kubsu.ru/ru/node/44498" target="_blank">105-летний юбилей.</a> 
+        В этот день в 1920 году вуз впервые открыл двери для студентов трех факультетов.</p>
+    </li> 
+    
+    <li>
+      <a href="https://ru.ruwiki.ru/wiki/Кубанский_государственный_университет#Структура" target="_blank">Ссылка на фрагмент страницы стороннего сайта</a>
+    </li>
+    
+    <li>
+      <img src="круг.png" alt="Ссылка-изображение" usemap="#mymap" width="800" height="300">
+      <map name="mymap">
+
+        <area shape="circle" coords="0,0,400,200" href="https://kubsu.ru" alt="главная" target="_blank">
+        <area shape="rect" coords="400,0,800,300" href="https://kubsu.ru/ru/news" alt="новости" target="_blank">
+
+      </map>
+    </li>
+    
+    <li>
+      <a href="">Ссылка с пустым href </a>
+    </li> 
+    
+    <li>
+      <a>Ссылка без href</a>
+    </li>
+    
+    <li>
+      <a href="https://kubsu.ru" rel="nofollow" target="_blank">Ссылка, по которой запрещен переход поисковикам </a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru" rel="noindex" target="_blank">Ссылка, запрещенная для индексации поисковиками </a>
+    </li>
+    
+    <li>
+      Нумерованный список ссылок с подписями title:
+      <ol>
+        <li><a href="https://kubsu.ru" title="Официальный сайт университета" target="_blank">Кубанский государственный университет</a></li>
+        <li><a href="https://kubsu.ru/ru/news" title="Новости КубГУ" target="_blank">Новости</a></li>
+        <li><a href="https://kubsu.ru/ru/science" title="Научная деятельность " target="_blank">Наука</a></li>
+      </ol>
+    </li> 
+    
+    <li>
+      <a href="ftp://ftp.freebsd.org/pub/FreeBSD/README.TXT" target="_blank">Ссылка на файл на сервере FTP </a>
+    </li> 
+  </ul>
+
+  <div id="fragment">
+    <h2>Фрагмент страницы</h2>
+    <p>Это раздел страницы, на который ведет ссылка</p>
+    <a href="#top">Вернуться наверх</a>
+  </div>
+
+</div>
+
+<div class="tables">
+
+  <h3> Таблица </h3>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td colspan="3">Ячейка 11, объединеная с 12, 13</td>
+      <td>Ячейка 14</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ячейка 21, объединеная с 22</td>
+      <td colspan="2">Ячейка 23, объединеная с 24</td>
+    </tr>
+    <tr>
+      <td>Ячейка 31</td>
+      <td colspan="3">Ячейка 32, объединеная с 33, 34</td>
+    </tr>
+    <tr>
+      <td>Ячейка 41</td>
+      <td colspan="3">Ячейка 42, объединеная с 43, 44</td>
+    </tr>
+    <tr>
+      <td>Ячейка 51</td>
+      <td colspan="2">Ячейка 52, объединеная с 53</td>
+      <td>Ячейка 54</td>
+    </tr>
+    <tr>
+      <td>Ячейка 61</td>
+      <td colspan="2">Ячейка 62, объединеная с 63</td>
+      <td>Ячейка 64</td>
+    </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <div class="forms">
+
+  <h3> Форма </h3>
+
+  <form action="/"
+      method="POST">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name-1"
+        placeholder="Введите ваше ФИО" required />
+      </label><br />
+      
+      <label>
+        Телефон:<br/>
+        <input name="phone" type="number"  
+        value="+7" placeholder="Формат:8 999 123-45-67" required>  
+      </label><br/>
+
+      <label>
+        Email:<br />
+        <input name="field-email"
+          type="email" required
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date" required
+          type="date" />
+      </label><br />
+      
+      Пол:<br />
+      <label><input type="radio" checked="checked" 
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio" 
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+
+        <label>
+          Ваш любимый язык программирования (выбрать несколько через ctrl):
+          <br />
+          <select name="field-name-2" required
+            multiple="multiple">
+            <option value="Значение1">Pascal</option>
+            <option value="Значение2">C</option>
+            <option value="Значение3">C++</option>
+            <option value="Значение4">JavaScript</option>
+            <option value="Значение5" >PHP</option>
+            <option value="Значение6" >Python</option>
+            <option value="Значение7">Java</option>
+            <option value="Значение8" >Haskel</option>
+            <option value="Значение9" >Clojure</option>
+            <option value="Значение10">Prolog</option>
+            <option value="Значение11" >Scala</option>
+          </select>
+        </label><br />
+
+        <label>
+          Биография:<br />
+          <textarea name="field-name-2">Ваша биография</textarea>
+        </label><br />
+
+        С контрактом ознакомлен(а):<br />
+      <label><input type="checkbox" required
+        name="check-1" />
+        </label><br />
+
+        <input type="submit" value="Сохранить" />
+      </form> 
+    </div>
+      
+      <footer>
+        (с) Гусев Егор  
+      </footer>
+
+</body>
+
+</html>
